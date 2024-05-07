@@ -56,7 +56,7 @@ const Dashboard = ({ setIsAuthenticated }) => {
   };
 
   return (
-    <div className="container-fluid m-5">
+    <div className="container my-5">
       {!isAdding && !isEditing && (
         <>
           <Header

@@ -57,6 +57,7 @@ const Edit = ({ employees, selectedEmployee, setEmployees, setIsEditing }) => {
         <h1>Edit Employee</h1>
         <label htmlFor="firstName">First Name</label>
         <input
+          className="bg-secondary text-white"
           id="firstName"
           type="text"
           name="firstName"
@@ -65,6 +66,7 @@ const Edit = ({ employees, selectedEmployee, setEmployees, setIsEditing }) => {
         />
         <label htmlFor="lastName">Last Name</label>
         <input
+          className="bg-secondary text-white"
           id="lastName"
           type="text"
           name="lastName"
@@ -73,14 +75,16 @@ const Edit = ({ employees, selectedEmployee, setEmployees, setIsEditing }) => {
         />
         <label htmlFor="email">Email</label>
         <input
+          className="bg-secondary text-white"
           id="email"
           type="email"
           name="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
-        <label htmlFor="salary">Salary ($)</label>
+        <label htmlFor="salary">Salary</label>
         <input
+          className="bg-secondary text-white"
           id="salary"
           type="number"
           name="salary"
@@ -89,6 +93,7 @@ const Edit = ({ employees, selectedEmployee, setEmployees, setIsEditing }) => {
         />
         <label htmlFor="date">Date</label>
         <input
+          className="bg-secondary text-white"
           id="date"
           type="date"
           name="date"

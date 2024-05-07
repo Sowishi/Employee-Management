@@ -50,6 +50,7 @@ const Add = ({ employees, setEmployees, setIsAdding }) => {
         <h1>Add Employee</h1>
         <label htmlFor="firstName">First Name</label>
         <input
+          className="bg-secondary text-white"
           id="firstName"
           type="text"
           name="firstName"
@@ -58,6 +59,7 @@ const Add = ({ employees, setEmployees, setIsAdding }) => {
         />
         <label htmlFor="lastName">Last Name</label>
         <input
+          className="bg-secondary text-white"
           id="lastName"
           type="text"
           name="lastName"
@@ -66,14 +68,16 @@ const Add = ({ employees, setEmployees, setIsAdding }) => {
         />
         <label htmlFor="email">Email</label>
         <input
+          className="bg-secondary text-white"
           id="email"
           type="email"
           name="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
-        <label htmlFor="salary">Salary ($)</label>
+        <label htmlFor="salary">Salary </label>
         <input
+          className="bg-secondary text-white"
           id="salary"
           type="number"
           name="salary"
@@ -82,6 +86,7 @@ const Add = ({ employees, setEmployees, setIsAdding }) => {
         />
         <label htmlFor="date">Date</label>
         <input
+          className="bg-secondary text-white"
           id="date"
           type="date"
           name="date"
