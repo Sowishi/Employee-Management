@@ -1,19 +1,19 @@
-import React from 'react';
+import React from "react";
 
 const Table = ({ employees, handleEdit, handleDelete }) => {
   employees.forEach((employee, i) => {
     employee.id = i + 1;
   });
 
-  const formatter = new Intl.NumberFormat('en-US', {
-    style: 'currency',
-    currency: 'USD',
+  const formatter = new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: "USD",
     minimumFractionDigits: null,
   });
 
   return (
     <div className="contain-table">
-      <table className="striped-table">
+      <table className="striped-table hover">
         <thead>
           <tr>
             <th>No.</th>
@@ -40,7 +40,7 @@ const Table = ({ employees, handleEdit, handleDelete }) => {
                 <td className="text-right">
                   <button
                     onClick={() => handleEdit(employee.id)}
-                    className="button muted-button"
+                    className="button muted-button bg-warning"
                   >
                     Edit
                   </button>
@@ -48,7 +48,7 @@ const Table = ({ employees, handleEdit, handleDelete }) => {
                 <td className="text-left">
                   <button
                     onClick={() => handleDelete(employee.id)}
-                    className="button muted-button"
+                    className="button muted-button bg-danger text-white"
                   >
                     Delete
                   </button>
